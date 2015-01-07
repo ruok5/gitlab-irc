@@ -31,6 +31,7 @@ bot = Cinch::Bot.new do
     c.user = $config['irc']['nickname']
     c.plugins.plugins = [PollingPlugin]
     c.verbose = $config['irc']['verbose']
+    c.ssl.use = $config['irc']['ssl']
   end
 end
 
